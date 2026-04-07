@@ -1,13 +1,15 @@
 Calculadora com Testes Unitários
 
 
-Sobre:
+*Sobre:
 
 Esse projeto foi desenvolvido para praticar testes unitários utilizando Python e a biblioteca pytest.
 
 A ideia foi implementar uma calculadora simples com algumas operações básicas e, em seguida, criar testes para verificar se essas funções estão funcionando corretamente.
 
-Funcionalidades:
+---------------------------------
+
+*Funcionalidades:
 
 A calculadora possui as seguintes operações:
 
@@ -17,7 +19,25 @@ multiplicação
 divisão (com tratamento para divisão por zero)
 fatorial (com validação para número negativo)
 potência
-Testes
+
+------------------
+
+*Regras de Negócio Testadas:
+
+As regras de negócio definidas para a calculadora são as seguintes, com correspondência direta aos testes implementados:
+
+- **Soma**: Deve somar dois números (inteiros ou flutuantes), funcionando corretamente com valores positivos, negativos e zero.
+- **Subtração**: Deve subtrair o segundo número do primeiro, sem restrições adicionais além dos tipos numéricos.
+- **Multiplicação**: Deve multiplicar dois números, retornando o produto correto.
+- **Divisão**: Deve dividir o primeiro número pelo segundo, retornando um resultado decimal se necessário. Deve lançar um erro `ZeroDivisionError` caso o divisor seja zero, com a mensagem "divisao por zero".
+- **Fatorial**: Deve calcular o fatorial de um número inteiro não-negativo (n >= 0), onde 0! = 1. Deve lançar um erro `ValueError` para números negativos, com a mensagem "numero negativo".
+- **Potência**: Deve calcular a^b (base elevada ao expoente), incluindo casos como a^0 = 1.
+
+Essas regras são validadas pelos testes unitários, que cobrem cenários válidos, inválidos e de limite para garantir o comportamento esperado.
+
+---------------------
+
+*Testes:
 
 Os testes foram feitos utilizando pytest.
 
@@ -30,8 +50,9 @@ alguns casos limite (como zero)
 
 O objetivo foi garantir que as funções se comportem corretamente em diferentes situações.
 
+---------------------------
 
-Estrutura:
+*Estrutura:
 
 operacoes/calculadora.py → funções da calculadora  
 tests/ → arquivos de testes  
@@ -48,6 +69,9 @@ Rodar os testes:
 
 python -m pytest
 
-Observação:
+-------------------
+
+*Observação:
 
 Os testes foram pensados para cobrir diferentes cenários de uso, incluindo situações válidas e inválidas, seguindo o que foi visto em aula sobre testes unitários.
+
