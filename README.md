@@ -46,7 +46,7 @@ pip install -r requirements.txt
 
 Rodar os testes:
 
-pytest
+python -m pytest
 
 Observação:
 
