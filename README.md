@@ -38,6 +38,7 @@ Essas regras são validadas pelos testes unitários, que cobrem cenários válid
 ---------------------
 
 *Testes:
+
 Print da ferramenta de cobertura de testes;
 <img width="582" height="364" alt="Captura de tela 2026-04-07 195425" src="https://github.com/user-attachments/assets/424885b5-c6b6-4873-be77-a19acf4f4739" />
 
