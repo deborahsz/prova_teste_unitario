@@ -75,7 +75,4 @@ python -m pytest
 
 -------------------
 
-*Observação:
-
-Os testes foram pensados para cobrir diferentes cenários de uso, incluindo situações válidas e inválidas, seguindo o que foi visto em aula sobre testes unitários.
 
